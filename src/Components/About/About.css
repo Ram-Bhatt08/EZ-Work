@@ -1,0 +1,191 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #faecec;
+  background-image: radial-gradient(#e8d4d4 1px, transparent 1px);
+  background-size: 20px 20px;
+  padding: 60px 120px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* LEFT SECTION */
+.about-left {
+  width: 50%;
+  color: #333;
+}
+
+.about-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.about-text {
+  line-height: 1.6;
+  max-width: 420px;
+  color: #444;
+  font-size: 1rem;
+}
+
+.about-stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: #fff8e1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.08) rotate(0deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  margin-top: 6px;
+  color: #666;
+}
+
+.rotate-left {
+  transform: rotate(-6deg);
+}
+
+.rotate-mid {
+  transform: rotate(2deg);
+}
+
+.rotate-right {
+  transform: rotate(6deg);
+}
+
+.border-highlight {
+  border: 2px solid #a855f7;
+}
+
+.orange {
+  color: #ff7a00;
+}
+
+.red {
+  color: #d00000;
+}
+
+/* RIGHT SECTION */
+.about-right {
+  width: 50%;
+  position: relative;
+  text-align: left;
+}
+
+.about-quote {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  color: #1b1b1b;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.brand-logo-img {
+  width: 180px;
+  opacity: 0.85;
+  border-radius: 10px;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.brand-logo-img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.mountain-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 280px;
+  opacity: 0.85;
+  border-radius: 12px;
+}
+
+/* 🌐 RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    padding: 40px 60px;
+    text-align: center;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .about-right {
+    margin-top: 50px;
+  }
+
+  .about-quote {
+    font-size: 1.6rem;
+  }
+
+  .brand-logo-img {
+    width: 150px;
+  }
+
+  .mountain-img {
+    width: 200px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    padding: 30px 20px;
+  }
+
+  .about-heading {
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+
+  .stat-card {
+    padding: 15px 25px;
+  }
+
+  .brand-logo-img {
+    width: 120px;
+  }
+
+  .mountain-img {
+    width: 160px;
+  }
+}

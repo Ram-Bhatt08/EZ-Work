@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Playfair+Display:wght@500&display=swap');
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #faecec;
+  background-image: radial-gradient(#e8d4d4 1px, transparent 1px);
+  background-size: 20px 20px;
+  padding: 60px 120px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 400px;
+  opacity: 0.3;
+}
+
+.hero-left h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+}
+
+.hero-left h1 span {
+  color: #ff6a00;
+}
+
+.hero-right {
+  margin-top: 2rem;
+  max-width: 600px;
+}
+
+.hero-right h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  border: 2px solid #ff66b3;
+  display: inline-block;
+  padding: 1rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.hero-subtitle {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #b35900;
+  font-weight: 500;
+}
+
+.hero-text {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hero-left,
+  .hero-right {
+    flex: 1;
+  }
+
+  .hero-right {
+    margin-top: 0;
+    padding-left: 3rem;
+  }
+
+  .hero-left h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero-right h2 {
+    font-size: 2.5rem;
+  }
+}

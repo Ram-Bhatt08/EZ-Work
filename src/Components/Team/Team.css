@@ -1,0 +1,214 @@
+.team-container {
+  min-height: 100vh;
+ background-color: #faecec;
+  background-image: radial-gradient(#e8d4d4 1px, transparent 1px);
+  padding: 40px 20px;
+  font-family: 'Georgia', serif;
+  position: relative;
+  overflow: hidden;
+}
+.people{
+    width:200px;
+    height: 200px;
+}
+.build{
+    width:300px;
+    height: 300px;
+}
+/* HEADER */
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto 40px;
+}
+
+.team-title {
+  font-size: 32px;
+  font-weight: normal;
+  color: #2c3e50;
+}
+
+.team-highlight {
+  color: #e74c3c;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #2c3e50;
+}
+
+/* MAIN */
+.team-main {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* LEFT */
+.team-left {
+  position: relative;
+}
+
+.sticky-note {
+  background: #fffacd;
+  padding: 30px;
+  transform: rotate(-2deg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 80px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #2c3e50;
+  font-style: italic;
+}
+
+.building-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-top: 40px;
+}
+
+.building-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.team-badge {
+  position: absolute;
+  background: white;
+  border-radius: 20px;
+  padding: 8px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.left-badge {
+  top: 60%;
+  left: -20px;
+}
+
+.right-badge {
+  top: 120px;
+  left: 42%;
+  z-index: 10;
+}
+
+.badge-number {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.arrow-right {
+  position: absolute;
+  right: -40px;
+  top: 400px;
+  width: 120px;
+  height: 120px;
+}
+
+.branding-label {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+/* RIGHT */
+.team-right {
+  position: relative;
+  margin-top: 40px;
+}
+
+.arrow-left {
+  position: absolute;
+  left: -100px;
+  top: 80px;
+  width: 140px;
+  height: 100px;
+}
+
+.filmmakers-label {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.team-silhouettes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.art-curators {
+  position: absolute;
+  top: 40px;
+  right: -60px;
+}
+
+.art-curators .label {
+  font-style: italic;
+  color: #2c3e50;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.art-frame {
+  width: 80px;
+  height: 100px;
+  border: 4px solid #e74c3c;
+  border-radius: 4px;
+  position: relative;
+}
+
+.frame-curve {
+  position: absolute;
+  bottom: -30px;
+  left: -40px;
+  width: 80px;
+  height: 50px;
+  transform: rotate(-10deg);
+}
+
+.cta-section {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.cta-section p {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.cta-button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
